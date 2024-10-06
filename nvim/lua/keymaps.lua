@@ -12,4 +12,7 @@ vim.keymap.set("n", "<leader>p", ":bp<cr>")
 vim.keymap.set("n", "<leader>x", ":bd<cr>")
 
 -- yank to clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+-- normal mode
+vim.keymap.set("n", "<leader>y", [["+yy]])
+-- visual mode 
+vim.keymap.set("v", "<leader>y", [["+y]])
